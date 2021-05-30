@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="images/logo.svg" alt="" />
+    </div>
+
+    <div class="container">
+      <picture class="image-container">
+        <!-- to make different images appear when screen size is changed -->
+        <source media="(min-width: 800px)" srcset="images/hero-desktop.jpg">
+        <img src="images/hero-mobile.jpg" alt="" class="image"/>
+      </picture>
+      
+
+      <div class="main-content">
+        <div class="text-lg">
+          <span class="accent">We're</span><span>coming</span> soon
+        </div>
+
+        <div class="text-small">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </div>
+
+        <div class="email-text">
+          <img src="images/icon-error.svg" alt="" class="icon">
+          <input type="text" placeholder="Email Address" class="email" id="email" />
+          <button class="submit-button" type="submit">
+            <img src="images/icon-arrow.svg" alt="" />
+          </button>
+         
+        </div>
+
+        <p class="error-msg">Please provide a valid email id</p>
+      </div>
+    </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded with love by <a href="#">Rishabh Thakur</a>.
+      </p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

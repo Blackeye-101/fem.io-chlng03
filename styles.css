@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap');
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    background-image: linear-gradient(135deg ,hsl(0, 0%, 100%),hsl(0, 100%, 98%));
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.logo{
+    width: 30%;
+    position: absolute;
+    top: 2.5%;
+    left: 3rem;  
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: 5rem;
+}
+
+.image{
+    width: 100%;
+}
+
+.main-content{
+    margin-top: 4rem;
+    text-align: center;
+    padding: 0 3rem;
+}
+
+.text-lg{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 10px;
+    line-height: 1.2;   
+}
+
+span{
+    display: block;
+}
+
+.accent{
+    font-weight: 300;
+    display: block; 
+    color: hsl(0, 36%, 70%); 
+}
+
+.text-small{
+    line-height: 1.5;
+    margin-top: 1.5rem;
+    color: hsl(0, 36%, 70%);
+}
+
+.email-text{
+    position: relative;
+    margin-bottom: 0.5rem;
+
+}
+
+.email{
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: linear-gradient(135deg ,hsl(0, 0%, 100%),hsl(0, 100%, 98%));
+    margin-top: 2rem;
+
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 30px;
+    color: hsl(0, 36%, 70%);
+    outline: none;
+}
+
+::placeholder{
+    color: hsl(0, 36%, 70%);
+    opacity: 50%;
+}
+
+.wrong{
+    border: 2px solid hsl(0, 93%, 68%);
+}
+
+.icon{
+    visibility: hidden;
+    position: absolute;
+    bottom: 10%;
+    right: 22%;
+}
+
+.error-msg{
+    visibility: hidden;
+    font-size: 0.7rem;
+    color: hsl(0, 93%, 68%);
+    margin-bottom: 2rem;
+}
+
+button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image:linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%)) ;
+    outline: none;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    width: 20%;
+    box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.4);
+
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+@media (min-width: 800px){
+
+    body{
+        background-image: url(images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0 auto;
+        height: 100%;
+        max-width: 1440px;
+        justify-content: space-between;
+        
+    }
+
+    .logo{
+        left:5rem ;
+        top: 2.5rem;
+    }
+
+    .email-text{
+        width: 60%;
+    }
+
+    .main-content{
+        text-align: left;
+        padding: 5rem 5rem 0 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .text-lg{
+        font-size: 5rem;
+    }
+
+    .text-small{
+        font-size: 1.5rem;
+        padding-right: 5rem
+    }
+
+    .image{
+        height: 100%;
+        width: 40vw;
+        max-width: 700px;
+    }
+
+}
